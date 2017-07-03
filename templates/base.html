@@ -4,13 +4,16 @@
         <meta charset="utf-8">
         {% block head %}
         <title>{% block title %}Tyler Conzett{% endblock %}</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans|Slabo+27px">
         <link rel="stylesheet" href="/static/css/master.css">
         {% block style %}{% endblock %}
         {% endblock %}
     </head>
     <body>
-        <div class="container">
-            Hello.
-        </div>
+        {% block container %}
+        {% endblock %}
+        <footer>
+            This is a footer
+        </footer>
     </body>
 </html>

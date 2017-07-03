@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* Elements */
+
+nav {
+    position: fixed;
+    width: 7%;
+    height: 100%;
+    background-color: #FFF;
+    right: 0;
+    z-index: 10;
+}
+
+/* Classes and Ids */
+
+.titleCont {
+    margin: none;
+    color: #f2f2f2;
+    width: 93%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #1b1b1b;
+    /*
+    animation-name: bkgBreathe;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    */
+}
+.sigBox {
+    position: relative;
+    height: auto;
+    width: 26%;
+    margin: auto;
+    overflow: auto;
+    border-color: #FFF;
+    border: 2px;
+}
+.sigBox img {
+    width: 100%;
+    margin: 0;
+    font-size: 5em;
+    filter: invert(100%);
+    pointer-events: none;
+}
+.sigBox hr {
+    align-self: center;
+    width: 80%;
+    margin: 0 auto;
+    color: #FFF;
+}
+.sigBox div {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    font-size: 1.125em;
+    margin-top: 15px;
+}
+.sigBox a {
+    transition: .25s;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+.sigBox a:hover {
+    transition: .25s;
+    color: #00B7c7;
+}
+/* Keyframes and Animation */
+
+@keyframes bkgBreathe {
+    from {background-color: rgb(63,82,99);}
+    to {background-color: rgb(86,107,125);}
+}
