@@ -1,3 +1,4 @@
 /static/pdfs/*
+!/static/pdfs/.gitkeep
 /static/images/*
-!*/.gitkeep
+!/static/images/.gitkeep
