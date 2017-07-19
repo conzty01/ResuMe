@@ -6,7 +6,10 @@
         <title>{% block title %}Tyler Conzett{% endblock %}</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans|Slabo+27px">
         <link rel="stylesheet" href="/static/css/master.css">
+        <link rel="stylesheet" href="/static/css/footerForm.css">
         {% block style %}{% endblock %}
+        <script type="text/javascript" src="/static/js/master.js" async></script>
+        {% block script %}{% endblock %}
         {% endblock %}
     </head>
     <body>
@@ -18,13 +21,32 @@
                 <span class="divider"></span>
                 (815) 281-2536 | conzyt01@luther.edu
             </div>
-            <form action="https://formspree.io/conzty01@luther.edu" method="POST">
-                <input type="text" name="_gotcha" style="display:none;">
-                <input type="text" name="name">
-                <input type="email" name="_replyto">
-                <input type="textt" name="_subject" value="">
-                <textarea></textarea>
-                <input type="submit" value="Send">
+            <form class="form-style-7" action="https://formspree.io/conzty01@luther.edu" method="POST">
+                <ul>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" maxlength="100">
+                    <span>Enter your full name here</span>
+                </li>
+                <li>
+                    <label for="_replyto">Email</label>
+                    <input type="email" name="_replyto" maxlength="100">
+                    <span>Enter a valid email address</span>
+                </li>
+                <li>
+                    <label for="_subject">Subject</label>
+                    <input type="text" name="_subject" maxlength="100">
+                    <span>Your website address (eg: http://www.google.com)</span>
+                </li>
+                <li>
+                    <label for="body">About You</label>
+                    <textarea name="body" onkeyup="adjust_textarea(this)"></textarea>
+                    <span>Say something about yourself</span>
+                </li>
+                <li>
+                    <input type="submit" value="Send">
+                </li>
+                </ul>
             </form>
         </footer>
     </body>

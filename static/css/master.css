@@ -21,8 +21,8 @@ footer {
     padding: 20px;
     position: relative;
     display: block;
-    height: 20%;
     background-color: #444;
+    color: #FFF;
 }
 h1 {
     font-family: 'Nunito Sans', sans-serif;
@@ -30,8 +30,9 @@ h1 {
 
 /* Classes and Ids */
 .divider {
+    margin: auto;
     display: block;
     height: 2px;
     background-color: #00b7c7;
-    width: 5%;
+    width: 10%;
 }
