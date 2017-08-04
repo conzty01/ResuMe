@@ -16,33 +16,38 @@
         {% block container %}
         {% endblock %}
         <footer>
-            <div>
-                Tyler Conzett<br>
-                <span class="divider"></span>
-                (815) 281-2536 | conzyt01@luther.edu
-            </div>
             <form class="form-style-7" action="https://formspree.io/conzty01@luther.edu" method="POST">
-                <ul>
-                <li>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" maxlength="100">
-                </li>
-                <li>
-                    <label for="_replyto">Email</label>
-                    <input type="email" name="_replyto" maxlength="100">
-                </li>
-                <li>
-                    <label for="_subject">Subject</label>
-                    <input type="text" name="_subject" maxlength="100">
-                </li>
-                <li>
-                    <label for="body">Message</label>
-                    <textarea name="body" onkeyup="adjust_textarea(this)"></textarea>
-                </li>
-                <li>
-                    <input type="submit" value="Send">
-                </li>
-                </ul>
+                <h1>Reach Out</h1>
+                <span class="divider"></span>
+                <h3>Have an idea in mind?  Want to collarborate? <br />
+                    Like something you see? Send me a message!</h3>
+                <div class="leftColumn">
+                    <ul>
+                        <li>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" maxlength="100">
+                        </li>
+                        <li>
+                            <label for="_replyto">Email</label>
+                            <input type="email" name="_replyto" maxlength="100">
+                        </li>
+                        <li>
+                            <label for="_subject">Subject</label>
+                            <input type="text" name="_subject" maxlength="100">
+                        </li>
+                    </ul>
+                </div>
+                <div class="rightColumn">
+                    <ul>
+                        <li>
+                            <label for="body">Message</label>
+                            <textarea name="body" onkeyup="adjust_textarea(this)"></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" value="Send">
+                        </li>
+                    </ul>
+                </div>
             </form>
         </footer>
     </body>
