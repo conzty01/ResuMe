@@ -2,6 +2,7 @@
 /* Color Candidates:
     #3F5263 -> washed-out blue
     #00B7C7 -> neon blue
+    #00AE5B -> leaf green
     #F2F2F2 -> eggshell
     #1B1B1B -> DARK grey
 */
@@ -33,6 +34,6 @@ h1 {
     margin: auto;
     display: block;
     height: 2px;
-    background-color: #00b7c7;
+    background-color: #00AE5B;
     width: 10%;
 }

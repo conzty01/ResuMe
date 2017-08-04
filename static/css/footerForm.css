@@ -1,19 +1,40 @@
 @charset "UTF-8";
 
+.leftColumn {
+    float: left;
+    display: block;
+    width: 48%;
+    height: 100%;
+}
+
+.rightColumn {
+    float: right;
+    display: block;
+    width: 48%;
+    height: 100%;
+}
+
 .form-style-7{
-    max-width:400px;
+    max-width:80%;
     margin:50px auto;
     border-radius:2px;
     padding:20px;
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Nunito Sans', serif;
+    overflow: hidden;
 }
 .form-style-7 h1{
     display: block;
     text-align: center;
     padding: 0;
     margin: 0px 0px 20px 0px;
-    color: #5C5C5C;
-    font-size:x-large;
+    color: #00AE5B;
+}
+.form-style-7 h3 {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 20px 0px 30px 0px;
+    color: #FFF;
 }
 .form-style-7 ul{
     list-style:none;
@@ -23,11 +44,11 @@
 .form-style-7 li{
     display: block;
     padding: 14px;
-    border:1px solid #00b7c7;
+    border:1px solid #00AE5B;
     margin-bottom: 30px;
     border-radius: 3px;
 }
-.form-style-7 li:last-child{
+.form-style-7 .rightColumn li:last-child{
     border:none;
     margin-bottom: 0px;
     text-align: center;
@@ -63,7 +84,7 @@
     display: block;
     outline: none;
     border: none;
-    border-bottom: 2px solid #000;
+    //border-bottom: 2px solid #0F1E2C;
     height: 25px;
     line-height: 25px;
     font-size: 16px;
@@ -87,6 +108,7 @@
 }
 .form-style-7 textarea{
     resize:none;
+    height: 100%;
 }
 .form-style-7 input[type="submit"],
 .form-style-7 input[type="button"]{
@@ -96,6 +118,7 @@
     border-bottom: 3px solid #5994FF;
     border-radius: 3px;
     color: #D2E2FF;
+    font-size: 1.2em;
 }
 .form-style-7 input[type="submit"]:hover,
 .form-style-7 input[type="button"]:hover{

@@ -6,11 +6,12 @@ nav {
     position: fixed;
     width: 7%;
     height: 100%;
-    background-color: #999;
+    background-color: #0F1E2C;
     right: 0;
     z-index: 10;
     padding: none;
     display: table;
+    box-shadow: -3px 0px 5px rgba(0,0,0,0.5);
 }
 
 nav > ul {
@@ -55,6 +56,20 @@ nav > ul > li:hover span {
     opacity: 1;
 }
 
+nav > ul > li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+nav > ul > li:hover:after {
+    width: 80%;
+    background: #00AE5B;
+}
 footer {
     width: 93%;
 }
@@ -68,7 +83,9 @@ footer {
     display: flex;
     position: relative;
     align-items: center;
-    background-color: #1b1b1b;
+    background-color: #0F1E2C;
+    border-width: 3px;
+    border-bottom: solid #00AE5B;
     /*
     animation-name: bkgBreathe;
     animation-duration: 5s;
@@ -113,7 +130,7 @@ footer {
 }
 .sigBox a:hover {
     transition: .25s;
-    color: #00B7c7;
+    color: #00AE5B;
 }
 /* Keyframes and Animation */
 
