@@ -5,6 +5,7 @@
     #00AE5B -> leaf green
     #F2F2F2 -> eggshell
     #1B1B1B -> DARK grey
+    #0F1E2C -> dark blue
 */
 
 /* Elements */
@@ -18,7 +19,7 @@ html, body {
 footer {
     text-align: center;
     box-sizing: border-box;
-    width: 100%;
+    width: 93%;
     padding: 20px;
     position: relative;
     display: block;
@@ -28,6 +29,7 @@ footer {
 }
 h1 {
     font-family: 'Nunito Sans', sans-serif;
+    color: #F2F2F2;
 }
 nav {
     position: fixed;
