@@ -24,6 +24,7 @@ footer {
     display: block;
     background-color: #444;
     color: #FFF;
+    border-top: solid #00AE5B;
 }
 h1 {
     font-family: 'Nunito Sans', sans-serif;
