@@ -27,9 +27,13 @@ footer {
     color: #FFF;
     border-top: solid #00AE5B;
 }
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Nunito Sans', sans-serif;
     color: #F2F2F2;
+}
+p {
+    color: #FFF;
+    width: 75%;
 }
 nav {
     position: fixed;
@@ -37,6 +41,7 @@ nav {
     height: 100%;
     background-color: #0F1E2C;
     right: 0;
+    top: 0;
     z-index: 10;
     padding: none;
     display: table;
