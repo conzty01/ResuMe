@@ -5,6 +5,43 @@
 
 {% block container %}
 <div class="projectContainer">
-    <h1>Projects</h1>
+    <div class="preFix">
+        <h1>My Projects</h1>
+        <span class="divider" style="margin-left:0px;"></span>
+        <p>Paper resumes can go so far in displaying my caliber of work, but it
+            isn't until a person can touch and manipulate and even
+            <span class="sniffle"></span> break my work. So take a peek at some
+            of my stuff below and please play around and report any bugs you might
+            find. Please be patient when loading the demos as the hosting platform
+            I use puts my applications to sleep if they are inactive for too long.</p>
+    </div>
+    <div class="galleryCont">
+        <div class="imageCont">
+            <img class="largeImage" src="/static/images/hd1080.png">
+            <img class="medImage" src="/static/images/hd1080.png">
+            <img class="tinyImage" src="/static/images/hd1080.png">
+        </div>
+        <div class="titleCont">
+            <h2>GenEd Finder</h2>
+            <div>
+                <a href="https://github.com/conzty01/LC-GenEd-Finder" target="_blank">Code</a>
+                <a href="https://lc-gened.herokuapp.com/" target="_blank">Demo</a>
+            </div>
+        </div>
+        <div class="imageCapt">
+            <input type="checkbox" class="read-more-state" id="gened" />
+            <p class="read-more-wrap">GenEd Finder is a web app that allows students at
+            Luther College to search through the courses offered for the upcoming
+            semester and filter them by the General Education requirements that
+            they satisfy. The application updates its database daily to make sure
+            that the user has accurate information about the courses being offered.
+            <br><br>
+            <span class="read-more-target">GenEd Finder is largely written in Python and a
+            Flask server is used serve the webpages out to the user. The main
+            aggregator is a webpage scraper called Scrapy. Once scraped, the
+            output from Scrapy is saved in a JSON file and parsed and saved to
+            the postresql database.</span></p>
+        </div>
+    </div>
 </div>
 {% endblock %}
