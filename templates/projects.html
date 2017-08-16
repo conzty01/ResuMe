@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block style %}
 <link rel="stylesheet" href="static/css/projects.css">
+<link rel="stylesheet" href="static/css/showMore.css">
 {% endblock %}
 
 {% block container %}
@@ -16,32 +17,39 @@
             I use puts my applications to sleep if they are inactive for too long.</p>
     </div>
     <div class="galleryCont">
+        {% for entry in projectList: %}
         <div class="imageCont">
-            <img class="largeImage" src="/static/images/hd1080.png">
-            <img class="medImage" src="/static/images/hd1080.png">
-            <img class="tinyImage" src="/static/images/hd1080.png">
+            <img class="largeImage" src="/static/images/{{entry['largeImage']}}">
+            <img class="medImage" src="/static/images/{{entry['medImage']}}">
+            <img class="tinyImage" src="/static/images/{{entry['tinyImage']}}">
         </div>
         <div class="titleCont">
-            <h2>GenEd Finder</h2>
+            <h2>{{entry["title"]}}</h2>
             <div>
-                <a href="https://github.com/conzty01/LC-GenEd-Finder" target="_blank">Code</a>
-                <a href="https://lc-gened.herokuapp.com/" target="_blank">Demo</a>
+                {% if entry['gitLink'] != None: %}
+                <a href="{{entry['gitLink']}}" target="_blank">Code</a>
+                {% endif %}
+                {% if entry['demoLink'] != None: %}
+                <a href="{{entry['demoLink']}}" target="_blank">Demo</a>
+                {% endif %}
             </div>
         </div>
         <div class="imageCapt">
-            <input type="checkbox" class="read-more-state" id="gened" />
-            <p class="read-more-wrap">GenEd Finder is a web app that allows students at
-            Luther College to search through the courses offered for the upcoming
-            semester and filter them by the General Education requirements that
-            they satisfy. The application updates its database daily to make sure
-            that the user has accurate information about the courses being offered.
+            <input type="checkbox" class="read-more-state" id="{{entry['strID']}}" />
+            <p class="read-more-wrap">{{entry['descMain']}}
             <br><br>
-            <span class="read-more-target">GenEd Finder is largely written in Python and a
-            Flask server is used serve the webpages out to the user. The main
-            aggregator is a webpage scraper called Scrapy. Once scraped, the
-            output from Scrapy is saved in a JSON file and parsed and saved to
-            the postresql database.</span></p>
+            {% if entry['descMore'] != None: %}
+            <span class="read-more-target">{{entry['descMore']}}</span></p>
+
+            <label for="{{entry['strID']}}" class="read-more-trigger"></label>
+            {% else: %}
+            </p>
+            {% endif %}
         </div>
+
+        <span class="divider" style="float:left;"></span>
+        {% endfor %}
+
     </div>
 </div>
 {% endblock %}
