@@ -18,8 +18,8 @@ def parseProjectFile(filename):
     return pList
 
 def enterProject(cur, projectDict):
-    executeStr = "INSERT INTO projects (title, github_link, demo_link, str_id, main_desc, more_desc) VALUES (%s,%s,%s,%s,%s,%s);"
-    cur.execute(executeStr,(projectDict['title'],projectDict['gitLink'],projectDict['demoLink'],projectDict['strID'],projectDict['descMain'],projectDict['descMore']))
+    executeStr = "INSERT INTO projects (title, github_link, demo_link, str_id, main_desc, more_desc, large_image, med_image, tiny_image) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s);"
+    cur.execute(executeStr,(projectDict['title'],projectDict['gitLink'],projectDict['demoLink'],projectDict['strID'],projectDict['descMain'],projectDict['descMore'],projectDict['largeImage'],projectDict['medImage'],projectDict['tinyImage']))
 
 def run():
     #conn = psycopg2.connect(os.environ["DATABASE_URL"])
