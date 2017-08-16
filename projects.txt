@@ -1,0 +1,59 @@
+title::GenEd Finder
+strID::genEd
+gitLink::https://github.com/conzty01/LC-GenEd-Finder
+demoLink::https://lc-gened.herokuapp.com/
+descMain::GenEd Finder is a web app that allows students at Luther College to search through the courses offered for the upcoming semester and filter them by the General Education requirements that they satisfy. The application updates its database daily to make sure that the user has accurate information about the courses being offered.
+descMore::GenEd Finder is largely written in Python and a Flask server is used serve the webpages out to the user. The main aggregator is a webpage scraper called Scrapy. Once scraped, the output from Scrapy is saved in a JSON file and parsed and saved to the postresql database.
+largeImage::hd1080.png
+medImage::hd1080.png
+tinyImage::hd1080.png
+~~~
+title::RA Scheduler
+strID::raSched
+gitLink::https://github.com/conzty01/RA_Scheduler
+demoLink::https://ra-scheduler.herokuapp.com/
+descMain::The RA Scheduler is student project created for CS330 that was intended to be used by the Assistant Hall Directors at Luther College for scheduling their Resident Assistants (RAs) for work in the Service Center.  The application uses a custom scheduling script to schedule RAs for duty based upon their individual conflicts.  Conflicts can be entered on the site and the current and past duty calendars can be viewed as well.
+descMore::This application is written in Python and is served via a Flask server. The custom scheduling script was created by Ryan Ehrhardt. This app utilizes a python module called psycopg2 that is able to connect and query to a postgresql database.
+largeImage::hd1080.png
+medImage::hd1080.png
+tinyImage::hd1080.png
+~~~
+title::RoadTrip
+strID::roadTrip
+gitLink::https://github.com/conzty01/RoadTrip
+demoLink::
+descMain::RoadTrip was another student project created for CS330 that, when the API keys were active, allowed for users to plan a road trip from two locations and receive weather projections for various locations on their route at the time they would be in that area.  The app used Google Maps API to calculate the shortest driving route between two points in the United States and Accuweather API to find the weather forecast for incremental locations at the time the user was expected to arrive.
+descMore::RoadTrip was a collaborative project with Ryan Ehrhardt and was designed to showcase our capability to use and create APIs in an online application.  A Python Flask server is used to serve information to the users and also request information from the external APIs.  The server serves simply as the messenger between the APIs and the user and, as such, most of the heavy lifting, including displaying the route and adding weather pins is handled client-side.
+largeImage::hd1080.png
+medImage::hd1080.png
+tinyImage::hd1080.png
+~~~
+title::ShowEval Directive
+strID::showEval
+gitLink::https://github.com/conzty01/RunestoneComponents/tree/master/runestone/showeval
+demoLink::http://inventwithpython.com/showeval/
+descMain::ShowEval is a javascript module created by Al Sweigart in order to create visualizations of expression evaluation for programming tutorials. During my summer research in 2017, I was assigned with adapting the module to be used as a RunestoneInteractive directive in the interactive textbooks.
+descMore::
+largeImage::hd1080.png
+medImage::hd1080.png
+tinyImage::hd1080.png
+~~~
+title::PDF Archive
+strID::pdfArch
+gitLink::https://github.com/conzty01/Sheet-Music-Archive
+demoLink::
+descMain::PDF Archive is a python script created after a year of computer science teaching to store pdf files in a zipfile archive.  The script could run through an archive and sort and find items by keywords through the custom metadata.
+descMore::
+largeImage::hd1080.png
+medImage::hd1080.png
+tinyImage::hd1080.png
+~~~
+title::ResuMe
+strID::resuMe
+gitLink::https://github.com/conzty01/ResuMe
+demoLink::
+descMain::This is my first portfolio website I built in 2017. It's a one-page wannabe that strives to achieve a balance between simple and modern design without the scrolling fatigue that comes with a one-page site.
+descMore::
+largeImage::hd1080.png
+medImage::hd1080.png
+tinyImage::hd1080.png
