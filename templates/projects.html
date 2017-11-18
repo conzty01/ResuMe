@@ -19,29 +19,29 @@
     <div class="galleryCont">
         {% for entry in projectList: %}
         <div class="imageCont">
-            <img class="largeImage" src="/static/images/{{entry['large_image']}}">
-            <img class="medImage" src="/static/images/{{entry['med_image']}}">
-            <img class="tinyImage" src="/static/images/{{entry['tiny_image']}}">
+            <img class="largeImage" src="/static/images/projects/{{entry['large_image']}}">
+            <img class="medImage" src="/static/images/projects/{{entry['med_image']}}">
+            <img class="tinyImage" src="/static/images/projects/{{entry['tiny_image']}}">
         </div>
         <div class="titleCont">
             <h2>{{entry['title']}}</h2>
             <div>
                 {% if entry['github_link'] != None: %}
-                <a href="{{entry['gitLink']}}" target="_blank">Code</a>
+                <a href="{{entry['github_link']}}" target="_blank">Code</a>
                 {% endif %}
                 {% if entry['demo_link'] != None: %}
-                <a href="{{entry['demoLink']}}" target="_blank">Demo</a>
+                <a href="{{entry['demo_link']}}" target="_blank">Demo</a>
                 {% endif %}
             </div>
         </div>
         <div class="imageCapt">
-            <input type="checkbox" class="read-more-state" id="{{entry['strID']}}" />
+            <input type="checkbox" class="read-more-state" id="{{entry['str_id']}}" />
             <p class="read-more-wrap">{{entry['main_desc']}}
             <br><br>
             {% if entry['more_desc'] != None: %}
             <span class="read-more-target">{{entry['more_desc']}}</span></p>
 
-            <label for="{{entry['strID']}}" class="read-more-trigger"></label>
+            <label for="{{entry['str_id']}}" class="read-more-trigger"></label>
             {% else: %}
             </p>
             {% endif %}

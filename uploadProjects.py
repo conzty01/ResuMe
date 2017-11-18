@@ -14,7 +14,7 @@ def parseProjectFile(filename):
                 if pDict[p[0]] == '':
                     pDict[p[0]] = None
 
-    print(pList)
+    #print(pList)
     return pList
 
 def enterProject(cur, projectDict):
