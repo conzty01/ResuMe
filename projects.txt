@@ -4,7 +4,7 @@ gitLink::https://github.com/conzty01/LC-GenEd-Finder
 demoLink::https://lc-gened.herokuapp.com/
 descMain::GenEd Finder is a web app that allows students at Luther College to search through the courses offered for the upcoming semester and filter them by the General Education requirements that they satisfy. The application updates its database daily to make sure that the user has accurate information about the courses being offered.
 descMore::GenEd Finder is largely written in Python and a Flask server is used serve the webpages out to the user. The main aggregator is a webpage scraper called Scrapy. Once scraped, the output from Scrapy is saved in a JSON file and parsed and saved to the postresql database.
-largeImage::hd1080.png
+largeImage::gened_large.png
 medImage::hd1080.png
 tinyImage::hd1080.png
 ~~~
