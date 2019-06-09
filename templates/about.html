@@ -1,1 +1,32 @@
 {% extends "base.html" %}
+{% block style %}
+<link rel="stylesheet" href="/static/css/about.css">
+{% endblock %}
+
+{% block container %}
+<div class="aboutCont">
+    <h1 id="name">Tyler Conzett</h1>
+    <div id="profile_backdrop">
+        <img id="profile_img" src="static/images/profile.png">
+    </div>
+    <div class="section">
+        <h2 class="after-line">About Me</h2>
+        <p>I'm Tyler, a software developer based in Decorah, IA that 
+            converts caffeine into code. From creating useful and intuitive
+            web apps to fun little scripts, if it involves technology,
+            I'm interested!
+        </p>
+        <p>After graduating <a class="underline" href="https://www.luther.edu/computer-science/">Luther College</a>, 
+           I joined the support team at <a class="underline" href="https://www.centralsquare.com/">CentralSquare Technologies</a> where 
+           I work to provide high level assistance to communities around
+           the continent. Outside of work, I continue to build and tinker
+           on my own projects taking inspiration from the world around me.
+        </p>
+    </div>
+    <div class="section">
+        <h2 class="after-line">Where I've Worked</h2>
+        <div class="workCont">
+        </div>        
+    </div>
+</div>
+{% endblock %}

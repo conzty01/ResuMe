@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* Elements */
+body {
+    background-color: #0F1E2C;
+}
+
+/* Classes and Ids */
+#name {
+    text-align: center;
+    font-size: 5em;
+    margin: 5% auto;
+}
+#profile_img {
+    border: 3px solid #00AE5B;
+    border-radius: 50%;
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin: 5% auto;
+    background-image: url("profile.img");
+    background-color: red;
+}
+#profile_backdrop {
+    width: 50%;
+    //background-color: green;
+    margin: 5% auto;
+    display: block;
+}
+
+.aboutCont {
+    width: 93%;
+    position: relative;
+    display: block;
+}
+.section {
+    width: 100%;
+    padding: 0 20px;
+    overflow: inherit;
+    display: block;
+    position: relative;
+    margin: 10px auto;
+}
